@@ -8,7 +8,7 @@ let heartbeat_timeout;
 
 websocket.on('open', (data) => {
     tmstmp = Date.now();
-    console.log(data);
+    // console.log(data);
     console.log(`coinbase websocket connected at ${tmstmp}`)
 })
 
@@ -42,7 +42,9 @@ websocket.on('message', data => {
 });
 websocket.on('error', err => {
     /* handle error */
+    console.log('error', err);
 });
+
 websocket.on('close', () => {
     console.log('ERROR', 'Websocket Error', `websocket closed. Attempting to re-connect.`);
 
