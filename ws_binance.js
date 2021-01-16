@@ -39,7 +39,7 @@ setInterval(async () => {
                 // log the processed file
                 const dataset = build_dataset(values);
                 // console.log(dataset);
-                fs.appendFile('./logs/binance_dataset_' + tmstmp_currentSysDate + orderbook[symbol].lastUpdateId + '.csv', dataset.join(',') + '\n', (err) => {
+                fs.appendFile('./logs/binance_dataset_' + tmstmp_currentSysDate + '_' + orderbook[symbol].lastUpdateId + '.csv', dataset.join(',') + '\n', (err) => {
                     if (err) { console.log('error writing log files', err) }
                 })
             }
