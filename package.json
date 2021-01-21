@@ -9,6 +9,7 @@
   "author": "Yiyi Flynn",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs-node": "^2.8.5",
     "ccxt": "^1.37.42",
     "coinbase-pro": "^0.9.0",
     "node-binance-api": "^0.12.4"
